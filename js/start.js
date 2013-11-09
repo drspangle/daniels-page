@@ -238,7 +238,7 @@ jQuery(document).ready(function($){
 		autoStart: true,
 		auto: true
 	});
-
+	
 	/*---------------------------------
 		Fancybox Lightbox
 	-----------------------------------*/
