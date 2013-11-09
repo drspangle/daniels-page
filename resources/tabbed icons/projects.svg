@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- License Agreement at http://iconmonstr.com/license/ -->
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+<path id="briefcase-13-icon" d="M201.875,141.084h-30v-30.563c0-11.747,9.523-21.271,21.271-21.271h125.708
+	c11.747,0,21.271,9.523,21.271,21.271v30.563h-30v-17.063c0-3.739-3.031-6.771-6.771-6.771h-94.709
+	c-3.739,0-6.771,3.031-6.771,6.771V141.084z M432,191.084V392.75H80V191.084H432 M462,161.084H50V422.75h412V161.084L462,161.084z
+	 M338.548,233.668l-4.26-9.801c-39.751,24.73-61.135,43.362-93.498,80.091c-17.214-12.272-26.929-17.911-42.244-25.322
+	l-13.096,12.105c26.188,24.272,40.418,40.279,61.74,65.392C281.761,294.137,305.769,262.274,338.548,233.668z"/>
+</svg>
