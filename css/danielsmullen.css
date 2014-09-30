@@ -1,14 +1,14 @@
 /*---------------------------------
 	IMPORTS
 -----------------------------------*/
-@import url(buttons.css);
-@import url(forms.css);
-@import url(menus.css);
-@import url(grid.css);
-@import url(jquery.fancybox-1.3.4.css);
-@import url(slideshow.css);
-@import url(prettify.css);
-@import url(tiptip.css);
+@import url(http://www.daniel-smullen.com/css/buttons.css);
+@import url(http://www.daniel-smullen.com/css/forms.css);
+@import url(http://www.daniel-smullen.com/css/menus.css);
+@import url(http://www.daniel-smullen.com/css/grid.css);
+@import url(http://www.daniel-smullen.com/css/jquery.fancybox-1.3.4.css);
+@import url(http://www.daniel-smullen.com/css/slideshow.css);
+@import url(http://www.daniel-smullen.com/css/prettify.css);
+@import url(http://www.daniel-smullen.com/css/tiptip.css);
 @import url(http://www.daniel-smullen.com/css/fonts/fontawesome/css/font-awesome.min.css);
 
 /*---------------------------------
