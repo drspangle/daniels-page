@@ -23,6 +23,8 @@
 
 % adjust the page margins
 \usepackage[scale=0.85]{geometry}
+\setlength{\footskip}{42pt}
+\setlength{\emergencystretch}{3em}
 
 %USE FANCY TIMELINES
 % \usepackage{moderntimeline}
@@ -35,8 +37,6 @@
 % Set the labels text size
 % \tltext{\tiny}
 % \tlenablemonths
-
-\usepackage[none]{hyphenat}
 
 \makeatletter
 
@@ -68,8 +68,6 @@
 \name{Daniel}{Smullen}
 \title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
 %\address{221 TCS Hall, Carnegie Mellon University}{4665 Forbes Ave, Pittsburgh, Pennsylvania, 15213, USA}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
-\phone[mobile]{(412)~499-1526}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
-\email{dsmullen@alumni.cmu.edu}                               % optional, remove / comment the line if not wanted
 \homepage{https://www.daniel-smullen.com}                         % optional, remove / comment the line if not wanted
 \social[linkedin]{daniel-r-smullen}                        % optional, remove / comment the line if not wanted
 %\social[twitter]{daniel\_smullen}                             % optional, remove / comment the line if not wanted
@@ -93,16 +91,16 @@
 
 \section{About Me}
 {
-I solve social and technical problems using interdisciplinary research methods, striving for excellence in the practice of software engineering. My main areas of interest include privacy, security, responsible AI, autonomous systems, software architecture, and the Internet of Things.
+I design privacy-enhancing technologies, interoperable standards, usable privacy and security controls, and AI-enabled trust systems for connected-device ecosystems, smart homes, and real-world infrastructure. My work combines software engineering, privacy engineering, human-computer interaction, requirements engineering, machine learning, data governance, Internet of Things (IoT) systems, and technical standards.
 
-\textbf{I help the world develop more usable, secure, privacy-preserving and trustworthy software.}
+\textbf{I help organizations develop usable, secure, privacy-preserving, and trustworthy software systems.}
 }
 
 \section{Education}
 \cventry{PhD}{Software Engineering}{Carnegie Mellon University}{Pittsburgh}{}{Software and Societal Systems Department (formerly Institute for Software Research), Committee: Norman Sadeh (Chair), Lorrie Faith Cranor, Alessandro Acquisti, Rebecca Weiss (External, Mozilla), Yaxing Yao (External, UMBC)
 \begin{itemize}%
 \item My research focused on Usable Privacy and Security, incorporating qualitative and quantitative methodologies (mixed methods) seen in behavioral economics, user-centered design, requirements engineering, machine learning, and empirical software engineering.
-\item My thesis investigated a broad cross section of privacy and security decisions in browsers and mobile apps; systematically assessing their effectiveness and manageability, exploring standardization, discussing public policy issues, and generalizability to other domains (e.g., the Internet of Things).
+\item My thesis investigated a broad cross section of privacy and security decisions in browsers and mobile apps; systematically assessing their effectiveness and manageability, discussing public policy issues, and exploring generalizability to other domains such as the Internet of Things.
 \item My work demonstrates that when the settings are well-aligned with people's mental models, machine learning can leverage the predictive power in models of more complex settings to help people manage their preferences more easily -- this can effectively mitigate trade-offs between accuracy and increased user burden as settings proliferate.
 \end{itemize}}
 
@@ -112,112 +110,112 @@ I solve social and technical problems using interdisciplinary research methods, 
 
 \cventry{BEng}{Software Engineering, Honours with Distinction}{Ontario Tech University (formerly University of Ontario Institute of Technology)}{Oshawa}{}{}
 
-\section{Industrial Work Experience}
+\section{Professional Work Experience}
 
-\cventry{2024 to Present}{Principal Privacy Research Engineer}{CableLabs, Security \& Privacy Technologies}{Remote}{}
-{I lead efforts at CableLabs to solve complex R\&D problems related to privacy and trust that impact the \$500 billion global cable industry and over 2000 vendor partner companies.
+\cventry{July 2024 to Present}{Principal Privacy Research Engineer}{CableLabs, Security \& Privacy Technologies}{Remote}{}
+{I lead privacy and trust R\&D for CableLabs' Security and Privacy Technologies group, specializing in usable privacy and security for connected-device ecosystems, IoT, privacy-enhancing technologies, and technical standards.
 \begin{itemize}
-    \item I report directly to the VP of Security and Privacy Technologies and work closely with the public policy and strategy teams.
-    \item I actively participate in standards bodies like CSA/Matter and IETF to drive the development of privacy-preserving technologies and protocols.
-    \item My work focuses on emerging technologies, such as the Internet of Things (IoT), building assurances that devices incorporate strong privacy protections from the outset.
-    \item I provide trusted guidance and expertise to CableLabs partners; CEOs, CTOs, CISOs, CPOs, and senior executives representing the largest and most diverse cable companies worldwide.
+    \item Translate socio-technical privacy goals into architectures, protocol requirements, data taxonomies, AI-aware usability guidance, and practical engineering controls for cable-industry scale.
+    \item Represent CableLabs in standards development and ecosystem work, including IETF Internet-Drafts and Connectivity Standards Alliance activity across Matter, Zigbee, and Aliro.
+    \item Chair Connectivity Standards Alliance Data Privacy Working Group activity through the Marketing and Product Subgroup and the Data Export Strategic Incubator Tiger Team.
+    \item Provide trusted privacy engineering guidance to CableLabs partners, executives, public policy teams, product strategists, and standards participants.
 \end{itemize}}
 
-\cventry{2023 to 2024}{Applied Scientist II}{Amazon Lab126, Alexa Sensitive Content Intelligence}{Remote}{}
-{By leveraging cutting-edge Large Language Models, innovative prompting methods, and a mixed-methods research approach, my work generates insights that contribute to a safer, more intelligent and more trustworthy Alexa experience.
+\cventry{2023 to Present}{Founding Ambassador and Standards Committee Member}{Institute of Operational Privacy Design (IOPD)}{Volunteer}{}
+{I serve as a volunteer Founding Ambassador and Standards Committee Member, helping develop privacy design standards that make privacy-by-design and privacy-by-default claims concrete, auditable, and implementable.
 \begin{itemize}
-    \item I developed AI-powered systems for large-scale customer feedback analysis and the extraction of actionable insights.
-    \item I led research efforts in building empirical models to assess, predict, and proactively mitigate risks to customer trust arising from customer interactions with Alexa.
-    \item I am a trusted subject matter expert on machine learning, generative AI, and privacy metrics.
+    \item Translate privacy principles, controls, evidence requirements, assurance criteria, and certification expectations into practical standards language for products, services, and business processes.
 \end{itemize}}
 
-\cventry{2021 to 2023}{Applied Scientist II}{Amazon Lab126, Devices \& Services Trust and Privacy}{Remote}{}
-{I worked on a variety of technical privacy problems that bridge the gaps between research, development, and privacy engineering.
+\cventry{October 2023 to July 2024}{Applied Scientist II}{Amazon Lab126, Alexa Sensitive Content Intelligence}{Remote}{}
+{I built AI-powered and LLM-based systems for large-scale Alexa customer feedback analysis, including an Alexa+ pipeline that treated chat transcripts as reading-comprehension and information-extraction tasks.
 \begin{itemize}
-    \item Technical problems related to data privacy, security, and customer trust were my focus areas.
-    \item My role included privacy engineering and Privacy by Design, which includes codifying standards and best practices.
-    \item I designed and developed privacy-preserving software/systems architectures for products, compliance tools, processes, PETs, and privacy requirements engineering.
-    \item I am a trusted subject matter expert in machine learning, generative AI, and privacy metrics.
-    \item I provided technical education, mentorship, and thought leadership to product teams, people managers, leaders, and lawyers.
+    \item Used off-the-shelf Large Language Models, prompting methods, and structured extraction to identify actionable trust, safety, and product-quality signals from conversational feedback.
+    \item Avoided the cost, development time, data labeling, and maintenance burden of custom BERT-style model development and training data pipelines.
+    \item Led empirical modeling work to assess, predict, and proactively mitigate customer-trust risks in Alexa interactions using prompt design, privacy metrics, and mixed-methods research.
 \end{itemize}}
 
-\cventry{2015}{334F Research Associate (Radar Science and Instrument Engineering)}{NASA Jet Propulsion Laboratory}{Pasadena}{}
+\cventry{November 2021 to October 2023}{Applied Scientist II}{Amazon Lab126, Devices \& Services Trust and Privacy}{Remote}{}
+{I worked across Amazon Devices \& Services on technical privacy and trust problems that connected research, development, privacy engineering, legal decision-making, and product execution.
+\begin{itemize}
+    \item Developed interpretable machine learning and decision-tree models that cross-referenced data type classifications with legal attestation decisions to predict and explain likely personally identifiable information (PII) handling.
+    \item Designed privacy-preserving architectures and compliance tooling for products, processes, Privacy Enhancing Technologies (PETs), and privacy requirements engineering.
+    \item Served as a subject matter expert for product, legal, leadership, and engineering teams on generative AI, privacy metrics, Privacy by Design, technical education, mentorship, and risk.
+\end{itemize}}
+
+\cventry{May 2015 to August 2015}{334F Research Associate (Radar Science and Instrument Engineering)}{NASA Jet Propulsion Laboratory}{Pasadena}{}
 {Supervisor: Razi Ahmed
 \begin{itemize}%
-\item I developed a high-performance distributed radar image processing system.
-\item I developed an efficient interferometry filtering algorithm; Processing time was reduced from weeks to minutes.
-\item I developed a portable implementation for heterogeneous computing platforms in the NASA Ames high performance compute cluster (Pleiades) and commodity desktop hardware.
-\item I implemented interferometry software in production radar applications for the UAVSAR program.
+\item Developed a high-performance, resolution-preserving image processing pipeline for interferometric synthetic aperture radar (InSAR) imagery.
+\item Implemented cross-platform Python/C11 software with OpenMP multithreading and MPI multiprocessing for workstations, commodity hardware, and NASA Ames Pleiades high-performance computing.
+\item Improved practical processing time from weeks to minutes and contributed production radar science software for the UAVSAR program.
 \end{itemize}}
 
-\cventry{2012}{Professional Engineer (In Training)}{SNC-Lavalin Global Information Technologies}{Toronto}{}
+\cventry{April 2012 to September 2012}{Engineer-in-Training (Co-op)}{SNC-Lavalin, Global Information Technologies}{Toronto}{}
 {
 \begin{itemize}%
-\item Conducted a reliability study on mission-critical data center systems.
-\item Established new guidelines for disaster recovery and emergency response planning.
-\item Conducted an infrastructure improvement planning study using Splunk.
-\item Streamlined workstation staging infrastructure; deployment times reduced from hours to minutes.
-\item Developed replacement systems for legacy DOS system infrastructure.
+\item Assessed mission-critical datacenter systems, reliability, disaster recovery, emergency response planning, infrastructure risk, and observed system performance using Splunk and operational data.
+\item Developed recommendations for infrastructure improvement, risk management, workstation staging, and replacement of legacy DOS infrastructure.
+\item Reduced workstation deployment time from hours to minutes through improved staging and automation.
 \end{itemize}}
 
-\cventry{2011}{Support Technician}{SNC-Lavalin Global M\&M}{Toronto}{}
+\cventry{April 2011 to September 2011}{Support Technician}{SNC-Lavalin, Mining and Metallurgy}{Toronto}{}
 {
 \begin{itemize}%
-\item I provided dedicated technical support for high-value clients and senior executive management.
-\item I conducted seminars on computer and network security, repair, open source software, and computer forensics.
-\item I developed automated data recovery systems.
-\item I performed high-risk data forensics and recovery on destroyed hardware.
+\item Provided dedicated technical support for high-value clients, engineering departments, and senior management.
+\item Developed automated data recovery workflows and performed high-risk computer forensics and recovery on damaged hardware.
+\item Delivered internal seminars on computer and network security, system repair, open source software, and computer forensics.
 \end{itemize}}
 
-\cventry{2009}{Laboratory Systems Administrator}{DESSAU/LVM-Technisol}{Toronto}{}
+\cventry{June 2009 to December 2009}{Laboratory Systems Administrator}{DESSAU (LVM-Technisol)}{Toronto}{}
 {
 \begin{itemize}%
-\item I managed the migration and replacement of legacy laboratory information management systems.
-\item I conducted field work in geotechnical engineering, subsurface sampling, concrete and asphalt QA/QC testing.
-\item I conducted in situ quality tests on major airport and highway resurfacing projects.
-\item I managed the migration and integration of systems during the LVM-JEGEL company merger.
+\item Managed migration and replacement of laboratory information management systems during the JEGEL/LVM-Technisol and DESSAU integration.
+\item Supported geotechnical field operations, subsurface sampling, concrete and asphalt QA/QC testing, and airport and highway resurfacing projects.
+\item Bridged laboratory information management, field data, and IT systems during active civil infrastructure work.
 \end{itemize}}
 
-\cventry{2009}{Laboratory Systems Administrator}{John Emery Geotechnical Engineering Ltd.}{Toronto}{}
+\cventry{April 2009 to June 2009}{Laboratory Systems Administrator}{John Emery Geotechnical Engineering Ltd.}{Toronto}{}
 {
 \begin{itemize}%
-\item I acted as a liaison for City of Toronto Special Projects.
-\item I managed 2009 geoinformatics for the Trans-Canada Highway Rehabilitation project.
-\item I managed the utility location for the 2009 Toronto Capital Works Program and the geotechnical subsurface sampling safety program.
-\item I developed ISO 9001 certified laboratory information management software.
-\item I performed debugging and repair of legacy pavement analysis embedded system software.
-\item I performed engineering design and construction of a file storage and database systems data center.
+\item Supported City of Toronto special projects, the Toronto 2009 Capital Works Program, and Trans-Canada Highway Rehabilitation work.
+\item Managed geoinformatics, utility-location coordination, subsurface-sampling safety workflows, and collaborative development of ISO 9001 certified laboratory sample management software.
+\item Repaired legacy pavement-analysis embedded systems and designed file-storage, database, and datacenter infrastructure for the Toronto engineering office.
 \end{itemize}}
 
 \section{Academic Work Experience}
-\cventry{2021}{Postdoctoral Researcher}{Carnegie Mellon University}{Pittsburgh}{Software and Societal Systems Department}{}
+\cventry{September 2021 to November 2021}{Postdoctoral Researcher}{Carnegie Mellon University}{Pittsburgh}{Institute for Software Research / S3D (The Software and Societal Systems Department)}
+{Researched user-centered privacy and security controls for managing data practices embedded in browsers and web systems, extending dissertation work in usable privacy and security, HCI, and privacy engineering into applied questions about browser and web-platform control design.}
 
-\cventry{2017 -- 2021}{Research Advisor}{Carnegie Mellon University}{Pittsburgh}{Software and Societal Systems Department}{Mentor for 3 undergraduate research programmers and 3 M.Sc. students.\begin{itemize}%
+\cventry{September 2014 to September 2021}{Graduate Research Assistant}{Carnegie Mellon University}{Pittsburgh}{Institute for Software Research / S3D (The Software and Societal Systems Department)}
+{Conducted Ph.D. research in usable privacy and security using mixed-methods qualitative and quantitative methods from HCI, behavioral economics, user-centered design, requirements engineering, machine learning, and empirical software engineering. The work produced publications, datasets, and prototype systems that later became evidence and technical grounding for policy discussions, privacy-engineering practice, and standards-related work on usable privacy and security.}
+
+\cventry{2017 -- 2021}{Research Advisor}{Carnegie Mellon University}{Pittsburgh}{Institute for Software Research / S3D (The Software and Societal Systems Department)}{Mentor for 3 undergraduate research programmers and 3 M.Sc. students.\begin{itemize}%
 \item Employed pair programming and extreme programming techniques.
 \item Employed Agile software development methodologies.
 \item Provided practical training on test-driven development, debugging, and version control techniques.
 \item Provided hands-on training with research methods, including crowd-sourcing, survey design, contextual interviews, and grounded/thematic analysis on a variety of data.
 \end{itemize}}
 
-\cventry{2016 -- 2020}{Teaching Assistant}{Carnegie Mellon University}{Pittsburgh}{Software and Societal Systems Department}{
+\cventry{2016 -- 2020}{Teaching Assistant}{Carnegie Mellon University}{Pittsburgh}{Institute for Software Research / S3D (The Software and Societal Systems Department)}{
 \begin{itemize}
     \item 17-655/17-755: Architectures for Software Systems
     \item 17-781/45-887: Mobile and IoT Computing Services
 \end{itemize}}
 
-\cventry{2013 -- 2014}{Research Associate}{Ontario Tech University}{Oshawa}{}
+\cventry{September 2013 to May 2014}{Research Associate}{UOIT (now Ontario Tech University)}{Oshawa}{}
 {Software Quality Research Lab, Advisor: Jeremy Bradbury
 \begin{itemize}
-\item Investigated privacy in meta-data unknowingly released through Internet traffic, in an ethics board-approved user study.
-\item Investigated the software testing coupling effect using mutation testing tools and automation.
+\item Investigated privacy exposure in network metadata unknowingly released through ordinary Internet traffic, in an ethics board-approved user study.
+\item Investigated the software testing coupling effect using mutation testing tools, automated software analysis, and software-quality research methods.
 \item Research funded by NSERC/CRSNG (Canada).
 \end{itemize}}
 
-\cventry{2013}{Undergraduate Research Assistant}{Ontario Tech University}{Oshawa}{}
+\cventry{April 2013 to September 2013}{Undergraduate Research Assistant}{UOIT (now Ontario Tech University)}{Oshawa}{}
 {Software Engineering Lab, Advisor: Ramiro Liscano
 \begin{itemize}%
-\item  Studied tinyOS-based wireless sensor networks, applying policy-based programming to create a new development environment (Policy IDE).
-\item Developed remote development environments for ubiquitous embedded computing on tinyOS using IPv6.
+\item Built TinyOS-based wireless sensor network tooling for policy programming, including Policy IDE, TOSServ, and IPv6-enabled Finger2IPv6 remote development variants for embedded systems.
+\item Explored how policy-based programming could make distributed embedded systems easier to develop, debug, and manage.
 \item Research funded by NSERC/CRSNG (Canada) Undergraduate Student Research Award.
 \end{itemize}}
 
@@ -234,7 +232,7 @@ I solve social and technical problems using interdisciplinary research methods, 
 
 \cventry{2017}{Mobile App Privacy Compliance System (Patent Pending)}{Carnegie Mellon University}{Pittsburgh}{Advisor: Norman Sadeh}{Funded by: National Science Foundation Frontier Grant on Usable Privacy Policies (CNS-1330596, CNS-1330141, CNS-1330214), National Science Foundation XSEDE: Extreme Science and Engineering Discovery Environment (ACI-1548562)}
 
-\cventry{2016}{Eddy: A Privacy Requirements Specification Language}{Carnegie Mellon University}{Pittsburgh}{Advisor: Travis Breaux}{Funded by: National Science Foundation (CNS-1330596), US Office of Naval Research (N002441410028), National Security Agency}
+\cventry{2016}{Eddy: A Privacy Requirements Specification Language}{Carnegie Mellon University}{Pittsburgh}{Advisor: Travis Breaux}{Funded by: NSF CNS-1330596; ONR N002441410028; National Security Agency}
 
 \cventry{2015}{Non-local Interferometric Synthetic Aperture Radar Parameter Estimator}{NASA Jet Propulsion Laboratory}{Pasadena}{Advisor: Razi Ahmed}{Funded by: National Aeronautics and Space Administration JPL PhD Fellowship}
 
@@ -258,6 +256,13 @@ I solve social and technical problems using interdisciplinary research methods, 
 \bibliographystyle{IEEEtran}
 \bibliography{publications.bib}                        % 'publications' is the name of a BibTeX file
 
+\section{Standards and Technical Drafts}
+\cventry{2025 to Present}{Privacy Preference Declaration for Home Networks}{IETF Internet-Draft}{Work in progress}{}
+{Authored with Brian Scriber. Defines a framework for user-defined privacy preferences across home networks, including policy discovery, device accountability, and privacy governance for connected-device ecosystems.}
+
+\cventry{2025 to Present}{Privacy Preference Declaration Taxonomy}{IETF Internet-Draft}{Work in progress}{}
+{Authored with Brian Scriber. Defines a machine-readable taxonomy for describing device data handling practices, including data types, purposes, actions, sources, and destinations.}
+
 % Publications from a BibTeX file using the multibib package
 %\section{Publications}
 %\nocitebook{book1,book2}
@@ -267,7 +272,22 @@ I solve social and technical problems using interdisciplinary research methods, 
 %\bibliographystylemisc{plain}
 %\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
 
-\section{Invited Talks}
+\section{Talks, Posters, and Recorded Sessions}
+\cventry{2026}{PETs in Practice: From Privacy Policies to User-Held Preferences with CableLabs}{Duality Technologies PETs in Practice}{Online}{Recorded Series}{
+\begin{itemize}%
+\item Discussed privacy-enhancing technologies, user-held preferences, and practical deployment paths for privacy engineering in connected-device ecosystems.
+\end{itemize}}
+
+\cventry{2025}{AI's Best Friend: The Role of PETs, Enabling Data Use \& Operationalizing Privacy}{IAPP Privacy. Security. Risk. 2025}{San Diego}{Panel}{
+\begin{itemize}%
+\item Participated in an expert panel on Privacy Enhancing Technologies, privacy operations, responsible data use, and privacy engineering practice.
+\end{itemize}}
+
+\cventry{2025}{Privacy Preference Declarations: Signed Receipts for Expectation-Aligned Smart Homes}{IEEE Symposium on Privacy Expectations (ISoPE 2025)}{New York City}{Paper Session}{
+\begin{itemize}%
+\item Presented conference paper on Privacy Preference Declarations, signed receipts, smart-home expectations, and user-centered privacy governance for connected devices.
+\end{itemize}}
+
 \cventry{2023}{Data-Driven Methodologies Toward More Usable Personalized Settings}{Amazon DataCon}{Online}{Conference}{
 \begin{itemize}%
 \item Presented an award-winning vision for the future of usable privacy and security as a featured subject matter expert, showcasing machine learning and mixed-methods research techniques.
@@ -320,7 +340,7 @@ University of Maine School of Computing and Information Science}{Online}{Guest L
 \item Presented conference talk for peer reviewed publication and participated in panel discussions.
 \end{itemize}}
 
-\cventry{2015}{Towards Rapid Re-Certification Using Formal Analysis}{United States Navy Postgraduate School 12th Annual Acquisition Research Symposium}{Monterey}{Conference}{
+\cventry{2015}{Towards Rapid Re-Certification Using Formal Analysis}{US Navy Acquisition Research Symposium}{Monterey}{Conference}{
 \begin{itemize}%
 \item Presented conference talk for peer reviewed publication and participated in panel discussions.
 \end{itemize}}
@@ -411,7 +431,7 @@ University of Maine School of Computing and Information Science}{Online}{Guest L
 
 
 \section{Awards}
-\cventry{2024}{Outstanding Contributor Award}{CSA/Matter Data Privacy Working Group}{}{}{}
+\cventry{2024}{Outstanding Contributor Award}{Connectivity Standards Alliance Data Privacy Working Group}{}{}{}
 
 \cventry{2017}{Distinguished Poster Award}{13th Symposium On Usable Privacy and Security (SOUPS 2017)}{San Jose}{}{}
 
@@ -464,13 +484,16 @@ University of Maine School of Computing and Information Science}{Online}{Guest L
 \cventry{Java}{Secondary Preference}{Used to develop parsers, lexers, and compilers for domain specific languages such as Eddy, as well as interact with a variety of Java-based research tools such as OWL-DL and other logic engines}{}{}{}
 
 \section{Professional Memberships}
-\cventry{Since 2024}{Connectivity Standards Alliance (CSA)}{Contributing Member}{}{}{
+\cventry{Since 2024}{Connectivity Standards Alliance (the Alliance)}{Contributing Member}{}{}{
 \begin{itemize}%
     \item Data Privacy Working Group
+    \item Data Export Strategic Incubator Tiger Team, Chair
     \item Matter Working Group
+    \item Zigbee Working Group
+    \item Aliro Working Group
     \item Certification Subgroup
     \item Technical Subgroup
-    \item Marketing and Product Subgroup
+    \item Marketing and Product Subgroup, Chair
 \end{itemize}}
 
 \cventry{Since 2023}{Institute of Operational Privacy Design (IOPD)}{Founding Ambassador, Standards Committee Member}{}{}{}
