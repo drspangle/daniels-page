@@ -16,6 +16,45 @@ function setupTabs() {
     return document.getElementById(tab.getAttribute("href").slice(1));
   }
 
+  function tabForHash(hash) {
+    var requestedTab = tabs.filter(function (tab) {
+      return tab.getAttribute("href") === hash;
+    })[0];
+
+    if (requestedTab) {
+      return requestedTab;
+    }
+
+    if (!hash || hash === "#") {
+      return null;
+    }
+
+    var target = document.getElementById(hash.slice(1));
+    if (!target) {
+      return null;
+    }
+
+    return tabs.filter(function (tab) {
+      var panel = panelFor(tab);
+      return panel && panel.contains(target);
+    })[0] || null;
+  }
+
+  function scrollToHashTarget(hash) {
+    if (!hash || hash === "#") {
+      return;
+    }
+
+    var target = document.getElementById(hash.slice(1));
+    if (!target || target.classList.contains("tab-content")) {
+      return;
+    }
+
+    window.setTimeout(function () {
+      target.scrollIntoView({ block: "start" });
+    }, 0);
+  }
+
   function activateTab(tab, updateHistory) {
     var panel = panelFor(tab);
 
@@ -71,20 +110,17 @@ function setupTabs() {
   });
 
   window.addEventListener("hashchange", function () {
-    var requestedTab = tabs.filter(function (tab) {
-      return tab.getAttribute("href") === window.location.hash;
-    })[0];
-
+    var requestedTab = tabForHash(window.location.hash);
     if (requestedTab) {
       activateTab(requestedTab, false);
+      scrollToHashTarget(window.location.hash);
     }
   });
 
-  var initialTab = tabs.filter(function (tab) {
-    return tab.getAttribute("href") === window.location.hash;
-  })[0] || tabs[0];
+  var initialTab = tabForHash(window.location.hash) || tabs[0];
 
   activateTab(initialTab, false);
+  scrollToHashTarget(window.location.hash);
 }
 
 function setupSortableTables() {
