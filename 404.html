@@ -1,38 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <!-- META -->
     <title>404'd!</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta name="description" content="The requested page could not be found on Daniel Smullen's personal website." />
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href="https://www.daniel-smullen.com/404.html" />
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="https://daniel-smullen.com/css/danielsmullen.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="https://daniel-smullen.com/css/style.css" media="all" />
-    <profile="http://www.w3.org/2005/10/profile">
-        <link rel="icon" type="image/png" href="https://daniel-smullen.com/resources/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/css/danielsmullen.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" media="all" />
+    <script src="https://kit.fontawesome.com/2599e8cb49.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="/resources/favicon.png">
 </head>
 
 <body>
-    <div class="col_12" style="margin-top:0px;">
+    <header class="col_12 site-header">
         <h1 class="center">
-				<span class="fa-stack fa-lg">
+				<span class="fa-stack fa-lg" aria-hidden="true">
 					<i class="fa fa-square fa-stack-2x"></i>
 					<i class="fa fa-cogs fa-stack-1x fa-inverse"></i>
 				</span> Daniel Smullen
 			</h1>
-    </div>
-    <div class="grid">
-        <div id="derp" class="tab-content">
-            <center>
-                <img src="https://daniel-smullen.com/img/83b.png" width="300" height="300" />
+    </header>
+    <main class="grid">
+        <section id="not-found" class="tab-content not-found">
+            <div class="profile-intro">
+                <img src="/img/83b.png" width="300" height="300" alt="Illustration for a missing page" />
                 <h4>Oops!</h4>
                 <p>
                     Error 404. The requested page was not found.
                 </p>
-                <a href="https://www.google.com/recaptcha/mailhide/d?k=01H2aMSuDmtRXC7DW8fUEBjA==&c=xg4iiz3VDTCL5X7m1WBN_dD2cMA5ZkFj_4QDtaSMMwQ=" target="_blank">
-                    <button class="medium green"><i class="fa fa-envelope-o"></i> Email Me</button>
+                <a class="button medium green" href="https://mailhide.io/e/rfBDhFIm" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i> Email Me
                 </a>
-            </center>
-        </div>
-    </div>
+                <a class="button medium blue" href="/">
+                    Return home
+                </a>
+            </div>
+        </section>
+    </main>
 </body>
+
+</html>
