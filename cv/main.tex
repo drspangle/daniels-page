@@ -46,6 +46,34 @@
 
 \makeatletter
 
+% Let BibTeX entries use the full text width instead of moderncv's date column.
+\renewenvironment{thebibliography}[1]%
+  {%
+    \bibliographyhead{\refname}%
+    \begin{list}{\bibliographyitemlabel}%
+      {%
+        \setlength{\topsep}{0pt}%
+        \setlength{\labelwidth}{0pt}%
+        \setlength{\labelsep}{0pt}%
+        \setlength{\leftmargin}{0pt}%
+        \setlength{\rightmargin}{0pt}%
+        \setlength{\itemindent}{0pt}%
+        \setlength{\itemsep}{0.35em}%
+        \setlength{\parsep}{0pt}%
+        \@openbib@code%
+        \usecounter{enumiv}%
+        \let\p@enumiv\@empty%
+        \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+      \sloppy%
+      \clubpenalty4000%
+      \@clubpenalty \clubpenalty%
+      \widowpenalty4000%
+      \sfcode`\.\@m%
+      \sfcode `\=1000\relax}%
+  {%
+    \def\@noitemerr{\@latex@warning{Empty `thebibliography' environment}}%
+    \end{list}}
+
 %\tikzset{
 %    tl@startyear/.append style={
 %        xshift=(0.5-\tl@startfraction)*\hintscolumnwidth,
