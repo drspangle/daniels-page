@@ -74,6 +74,10 @@
     \def\@noitemerr{\@latex@warning{Empty `thebibliography' environment}}%
     \end{list}}
 
+\newcommand{\fullwidthdraft}[3]{%
+  \par\addvspace{0.65em}%
+  \noindent\textbf{#1}, \textit{#2}. #3\par}
+
 %\tikzset{
 %    tl@startyear/.append style={
 %        xshift=(0.5-\tl@startfraction)*\hintscolumnwidth,
@@ -314,11 +318,9 @@ I design privacy-enhancing technologies, interoperable standards, usable privacy
 \bibliography{publications.bib}                        % 'publications' is the name of a BibTeX file
 
 \section{Standards and Technical Drafts}
-\cventry{2025 to Present}{Privacy Preference Declaration for Home Networks}{IETF Internet-Draft}{Work in progress}{}
-{Authored with CableLabs CISO Brian Scriber. Defines a framework for user-defined privacy preferences across home networks, including policy discovery, device accountability, and privacy governance for connected-device ecosystems.}
+\fullwidthdraft{Privacy Preference Declaration for Home Networks}{IETF Internet-Draft, work in progress}{Authored with CableLabs CISO Brian Scriber. Defines a framework for user-defined privacy preferences across home networks, including policy discovery, device accountability, and privacy governance for connected-device ecosystems.}
 
-\cventry{2025 to Present}{Privacy Preference Declaration Taxonomy}{IETF Internet-Draft}{Work in progress}{}
-{Authored with CableLabs CISO Brian Scriber. Defines a machine-readable taxonomy for describing device data handling practices, including data types, purposes, actions, sources, and destinations.}
+\fullwidthdraft{Privacy Preference Declaration Taxonomy}{IETF Internet-Draft, work in progress}{Authored with CableLabs CISO Brian Scriber. Defines a machine-readable taxonomy for describing device data handling practices, including data types, purposes, actions, sources, and destinations.}
 
 % Publications from a BibTeX file using the multibib package
 %\section{Publications}
