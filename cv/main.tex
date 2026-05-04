@@ -24,7 +24,13 @@
 % adjust the page margins
 \usepackage[scale=0.85]{geometry}
 \setlength{\footskip}{42pt}
-\setlength{\emergencystretch}{3em}
+\usepackage[none]{hyphenat}
+\usepackage{ragged2e}
+\AtBeginDocument{\RaggedRight}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\hbadness=10000
+\setlength{\emergencystretch}{4em}
 
 %USE FANCY TIMELINES
 % \usepackage{moderntimeline}
