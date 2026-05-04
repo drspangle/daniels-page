@@ -1,0 +1,507 @@
+\documentclass[11pt,letterpaper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+
+%%fancy arrows
+\newcommand{\myrule} [3] []{
+    \begin{center}
+        \begin{tikzpicture}
+            \draw[color1, #2-#3, ultra thick, #1] (0,0) to (0.75\linewidth,0);
+        \end{tikzpicture}
+    \end{center}
+}
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+
+%USE FANCY TIMELINES
+% \usepackage{moderntimeline}
+% Set the scale.
+% I go up to 2013 otherwise some late dates overflow on the entry
+% \tlmaxdates{2009}{2017}
+% Set the line width.
+% This automatically sets the space under the top label to be 1pt more
+% \tlwidth{0.7ex}
+% Set the labels text size
+% \tltext{\tiny}
+% \tlenablemonths
+
+\usepackage[none]{hyphenat}
+
+\makeatletter
+
+%\tikzset{
+%    tl@startyear/.append style={
+%        xshift=(0.5-\tl@startfraction)*\hintscolumnwidth,
+%        anchor=base
+%    }
+%}
+
+%\newlength{\hintscolumnthickness}
+%\setlength{\hintscolumnthickness}{0pt}
+%\RenewDocumentCommand{\subsection}{sm}{%
+%  \par\addvspace{4ex}%
+%  \phantomsection{}% reset the anchor for hyperrefs
+%  \addcontentsline{toc}{subsection}{#2}%
+%  \parbox[t]{\hintscolumnwidth}{\strut\raggedleft\raisebox{\baseletterheight}{\color{color1}\rule{\hintscolumnwidth}{\hintscolumnthickness}}}%
+%  \hspace{\separatorcolumnwidth}%
+%  \parbox[t]{\maincolumnwidth}{\strut\sectionstyle{#2}}%
+%  \par\nobreak\addvspace{1ex}\@afterheading}
+%\makeatother
+%
+%\renewcommand*{\subsectionfont}{\fontsize{12}{0}\mdseries\upshape}
+
+\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Daniel}{Smullen}
+\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+%\address{221 TCS Hall, Carnegie Mellon University}{4665 Forbes Ave, Pittsburgh, Pennsylvania, 15213, USA}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{(412)~499-1526}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{dsmullen@alumni.cmu.edu}                               % optional, remove / comment the line if not wanted
+\homepage{https://www.daniel-smullen.com}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{daniel-r-smullen}                        % optional, remove / comment the line if not wanted
+%\social[twitter]{daniel\_smullen}                             % optional, remove / comment the line if not wanted
+\social[github]{drspangle}                              % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[2in][0.8pt]{daniel.jpg}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\quote{``Don't have good ideas if you aren't willing to be responsible for them.'' ---Alan Perlis}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{About Me}
+{
+I solve social and technical problems using interdisciplinary research methods, striving for excellence in the practice of software engineering. My main areas of interest include privacy, security, responsible AI, autonomous systems, software architecture, and the Internet of Things.
+
+\textbf{I help the world develop more usable, secure, privacy-preserving and trustworthy software.}
+}
+
+\section{Education}
+\cventry{PhD}{Software Engineering}{Carnegie Mellon University}{Pittsburgh}{}{Software and Societal Systems Department (formerly Institute for Software Research), Committee: Norman Sadeh (Chair), Lorrie Faith Cranor, Alessandro Acquisti, Rebecca Weiss (External, Mozilla), Yaxing Yao (External, UMBC)
+\begin{itemize}%
+\item My research focused on Usable Privacy and Security, incorporating qualitative and quantitative methodologies (mixed methods) seen in behavioral economics, user-centered design, requirements engineering, machine learning, and empirical software engineering.
+\item My thesis investigated a broad cross section of privacy and security decisions in browsers and mobile apps; systematically assessing their effectiveness and manageability, exploring standardization, discussing public policy issues, and generalizability to other domains (e.g., the Internet of Things).
+\item My work demonstrates that when the settings are well-aligned with people's mental models, machine learning can leverage the predictive power in models of more complex settings to help people manage their preferences more easily -- this can effectively mitigate trade-offs between accuracy and increased user burden as settings proliferate.
+\end{itemize}}
+
+%\myrule[line width = 1mm]{fast cap reversed}{fast cap reversed}
+
+\cventry{MSc}{Software Engineering}{Carnegie Mellon University}{Pittsburgh}{Software and Societal Systems Department}{}
+
+\cventry{BEng}{Software Engineering, Honours with Distinction}{Ontario Tech University (formerly University of Ontario Institute of Technology)}{Oshawa}{}{}
+
+\section{Industrial Work Experience}
+
+\cventry{2024 to Present}{Principal Privacy Research Engineer}{CableLabs, Security \& Privacy Technologies}{Remote}{}
+{I lead efforts at CableLabs to solve complex R\&D problems related to privacy and trust that impact the \$500 billion global cable industry and over 2000 vendor partner companies.
+\begin{itemize}
+    \item I report directly to the VP of Security and Privacy Technologies and work closely with the public policy and strategy teams.
+    \item I actively participate in standards bodies like CSA/Matter and IETF to drive the development of privacy-preserving technologies and protocols.
+    \item My work focuses on emerging technologies, such as the Internet of Things (IoT), building assurances that devices incorporate strong privacy protections from the outset.
+    \item I provide trusted guidance and expertise to CableLabs partners; CEOs, CTOs, CISOs, CPOs, and senior executives representing the largest and most diverse cable companies worldwide.
+\end{itemize}}
+
+\cventry{2023 to 2024}{Applied Scientist II}{Amazon Lab126, Alexa Sensitive Content Intelligence}{Remote}{}
+{By leveraging cutting-edge Large Language Models, innovative prompting methods, and a mixed-methods research approach, my work generates insights that contribute to a safer, more intelligent and more trustworthy Alexa experience.
+\begin{itemize}
+    \item I developed AI-powered systems for large-scale customer feedback analysis and the extraction of actionable insights.
+    \item I led research efforts in building empirical models to assess, predict, and proactively mitigate risks to customer trust arising from customer interactions with Alexa.
+    \item I am a trusted subject matter expert on machine learning, generative AI, and privacy metrics.
+\end{itemize}}
+
+\cventry{2021 to 2023}{Applied Scientist II}{Amazon Lab126, Devices \& Services Trust and Privacy}{Remote}{}
+{I worked on a variety of technical privacy problems that bridge the gaps between research, development, and privacy engineering.
+\begin{itemize}
+    \item Technical problems related to data privacy, security, and customer trust were my focus areas.
+    \item My role included privacy engineering and Privacy by Design, which includes codifying standards and best practices.
+    \item I designed and developed privacy-preserving software/systems architectures for products, compliance tools, processes, PETs, and privacy requirements engineering.
+    \item I am a trusted subject matter expert in machine learning, generative AI, and privacy metrics.
+    \item I provided technical education, mentorship, and thought leadership to product teams, people managers, leaders, and lawyers.
+\end{itemize}}
+
+\cventry{2015}{334F Research Associate (Radar Science and Instrument Engineering)}{NASA Jet Propulsion Laboratory}{Pasadena}{}
+{Supervisor: Razi Ahmed
+\begin{itemize}%
+\item I developed a high-performance distributed radar image processing system.
+\item I developed an efficient interferometry filtering algorithm; Processing time was reduced from weeks to minutes.
+\item I developed a portable implementation for heterogeneous computing platforms in the NASA Ames high performance compute cluster (Pleiades) and commodity desktop hardware.
+\item I implemented interferometry software in production radar applications for the UAVSAR program.
+\end{itemize}}
+
+\cventry{2012}{Professional Engineer (In Training)}{SNC-Lavalin Global Information Technologies}{Toronto}{}
+{
+\begin{itemize}%
+\item Conducted a reliability study on mission-critical data center systems.
+\item Established new guidelines for disaster recovery and emergency response planning.
+\item Conducted an infrastructure improvement planning study using Splunk.
+\item Streamlined workstation staging infrastructure; deployment times reduced from hours to minutes.
+\item Developed replacement systems for legacy DOS system infrastructure.
+\end{itemize}}
+
+\cventry{2011}{Support Technician}{SNC-Lavalin Global M\&M}{Toronto}{}
+{
+\begin{itemize}%
+\item I provided dedicated technical support for high-value clients and senior executive management.
+\item I conducted seminars on computer and network security, repair, open source software, and computer forensics.
+\item I developed automated data recovery systems.
+\item I performed high-risk data forensics and recovery on destroyed hardware.
+\end{itemize}}
+
+\cventry{2009}{Laboratory Systems Administrator}{DESSAU/LVM-Technisol}{Toronto}{}
+{
+\begin{itemize}%
+\item I managed the migration and replacement of legacy laboratory information management systems.
+\item I conducted field work in geotechnical engineering, subsurface sampling, concrete and asphalt QA/QC testing.
+\item I conducted in situ quality tests on major airport and highway resurfacing projects.
+\item I managed the migration and integration of systems during the LVM-JEGEL company merger.
+\end{itemize}}
+
+\cventry{2009}{Laboratory Systems Administrator}{John Emery Geotechnical Engineering Ltd.}{Toronto}{}
+{
+\begin{itemize}%
+\item I acted as a liaison for City of Toronto Special Projects.
+\item I managed 2009 geoinformatics for the Trans-Canada Highway Rehabilitation project.
+\item I managed the utility location for the 2009 Toronto Capital Works Program and the geotechnical subsurface sampling safety program.
+\item I developed ISO 9001 certified laboratory information management software.
+\item I performed debugging and repair of legacy pavement analysis embedded system software.
+\item I performed engineering design and construction of a file storage and database systems data center.
+\end{itemize}}
+
+\section{Academic Work Experience}
+\cventry{2021}{Postdoctoral Researcher}{Carnegie Mellon University}{Pittsburgh}{Software and Societal Systems Department}{}
+
+\cventry{2017 -- 2021}{Research Advisor}{Carnegie Mellon University}{Pittsburgh}{Software and Societal Systems Department}{Mentor for 3 undergraduate research programmers and 3 M.Sc. students.\begin{itemize}%
+\item Employed pair programming and extreme programming techniques.
+\item Employed Agile software development methodologies.
+\item Provided practical training on test-driven development, debugging, and version control techniques.
+\item Provided hands-on training with research methods, including crowd-sourcing, survey design, contextual interviews, and grounded/thematic analysis on a variety of data.
+\end{itemize}}
+
+\cventry{2016 -- 2020}{Teaching Assistant}{Carnegie Mellon University}{Pittsburgh}{Software and Societal Systems Department}{
+\begin{itemize}
+    \item 17-655/17-755: Architectures for Software Systems
+    \item 17-781/45-887: Mobile and IoT Computing Services
+\end{itemize}}
+
+\cventry{2013 -- 2014}{Research Associate}{Ontario Tech University}{Oshawa}{}
+{Software Quality Research Lab, Advisor: Jeremy Bradbury
+\begin{itemize}
+\item Investigated privacy in meta-data unknowingly released through Internet traffic, in an ethics board-approved user study.
+\item Investigated the software testing coupling effect using mutation testing tools and automation.
+\item Research funded by NSERC/CRSNG (Canada).
+\end{itemize}}
+
+\cventry{2013}{Undergraduate Research Assistant}{Ontario Tech University}{Oshawa}{}
+{Software Engineering Lab, Advisor: Ramiro Liscano
+\begin{itemize}%
+\item  Studied tinyOS-based wireless sensor networks, applying policy-based programming to create a new development environment (Policy IDE).
+\item Developed remote development environments for ubiquitous embedded computing on tinyOS using IPv6.
+\item Research funded by NSERC/CRSNG (Canada) Undergraduate Student Research Award.
+\end{itemize}}
+
+\section{Funded Research Projects}
+\cventry{2020-2021}{Engineering Usable Privacy and Security Affordances For Notice and Choice}{Carnegie Mellon University}{Pittsburgh}{Advisor: Norman Sadeh}{Funded by: Defense Advanced Research Projects Agency, US Air Force Research Laboratory (FA8750-15-2-0277), National Science Foundation Secure and Trustworthy Computing program (CNS-15-13957, CNS-1801316, CNS-1914486)}
+
+\cventry{2019-2020}{Design and Evaluation of Security and Privacy Nudges}{Carnegie Mellon University}{Pittsburgh}{Advisor: Norman Sadeh}{Funded by: National Science Foundation Secure and Trustworthy Computing program (CNS-1330596, SES-1513957, CNS-1801316)}
+
+\cventry{2018-2019}{Internet of Things Privacy Infrastructure (Patent Pending)}{Carnegie Mellon University}{Pittsburgh}{Advisor: Norman Sadeh}{Funded by: Defense Advanced Research Projects Agency, US Air Force Research Laboratory (FA8750-15-2-0277), National Science Foundation Secure and Trustworthy Computing program (CNS-15-13957, CNS-1801316, CNS-1914486)}
+
+\cventry{2017-2019}{DARPA Brandeis: A Privacy Assistant for the Internet of Things}{Carnegie Mellon University}{Pittsburgh}{Advisor: Norman Sadeh}{Funded by: Defense Advanced Research Projects Agency, US Air Force Research Laboratory (FA8750-15-2-0277), National Science Foundation Secure and Trustworthy Computing program (CNS-15-13957, CNS-1801316, CNS-1914486)}
+
+\cventry{2017-2019}{The Usable Privacy Policy Project}{Carnegie Mellon University}{Pittsburgh}{Advisor: Norman Sadeh}{Funded by: National Science Foundation Frontier Grant on Usable Privacy Policies (CNS-1330596, CNS-1330141, CNS-1330214)}
+
+\cventry{2017}{Mobile App Privacy Compliance System (Patent Pending)}{Carnegie Mellon University}{Pittsburgh}{Advisor: Norman Sadeh}{Funded by: National Science Foundation Frontier Grant on Usable Privacy Policies (CNS-1330596, CNS-1330141, CNS-1330214), National Science Foundation XSEDE: Extreme Science and Engineering Discovery Environment (ACI-1548562)}
+
+\cventry{2016}{Eddy: A Privacy Requirements Specification Language}{Carnegie Mellon University}{Pittsburgh}{Advisor: Travis Breaux}{Funded by: National Science Foundation (CNS-1330596), US Office of Naval Research (N002441410028), National Security Agency}
+
+\cventry{2015}{Non-local Interferometric Synthetic Aperture Radar Parameter Estimator}{NASA Jet Propulsion Laboratory}{Pasadena}{Advisor: Razi Ahmed}{Funded by: National Aeronautics and Space Administration JPL PhD Fellowship}
+
+\cventry{2014}{Incident Recognition and Intelligence System (IRIS)}{Ontario Tech University}{Oshawa}{Advisor: Shahryar Rahnamayan}{Funded by: University of Toronto Intelligent Transportation Systems Laboratory, Ontario Tech University, NSERC/CRSNG (Canada)}
+
+\cventry{2014}{Automated Marking System (AMS)}{Ontario Tech University}{Oshawa}{Advisor: Kamran Sartipi}{Funded by: Ontario Tech University}
+
+\cventry{2013}{Policy IDE}{Ontario Tech University}{Oshawa}{Advisor: Ramiro Liscano}{Funded by: NSERC/CRSNG (Canada)}
+\cventry{2013}{TOSServ}{Ontario Tech University}{Oshawa}{Advisor: Ramiro Liscano}{Funded by: NSERC/CRSNG (Canada)}
+\cventry{2013}{Finger2IPv6}{Ontario Tech University}{Oshawa}{Advisor: Ramiro Liscano}{Funded by: NSERC/CRSNG (Canada)}
+\cventry{2013}{Military Logistics Management System (MLMS)}{Ontario Tech University}{Oshawa}{Advisor: Eyhab Al-Masri}{Funded by: Ontario Tech University}
+
+\cventry{2012}{sneakyFS Secure Journaling Encrypted File System}{Ontario Tech University}{Oshawa}{Advisor: Kamran Sartipi}{Funded by: Ontario Tech University}
+\cventry{2012}{Datacenter Utilization Research Study}{SNC-Lavalin Global Information Technologies}{Toronto}{Advisor: Marc Ross}{Funded by: SNC-Lavalin}
+
+\renewcommand{\refname}{Refereed Publications}
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{IEEEtran}
+\bibliography{publications.bib}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\section{Invited Talks}
+\cventry{2023}{Data-Driven Methodologies Toward More Usable Personalized Settings}{Amazon DataCon}{Online}{Conference}{
+\begin{itemize}%
+\item Presented an award-winning vision for the future of usable privacy and security as a featured subject matter expert, showcasing machine learning and mixed-methods research techniques.
+\end{itemize}}
+
+\cventry{2022}{Information Privacy Engineering}{
+University of Maine School of Computing and Information Science}{Online}{Guest Lecture}{
+\begin{itemize}%
+\item Provided lectures and discussion session as a featured subject matter expert in a graduate level academic course.
+\end{itemize}}
+
+\cventry{2020}{The Best of Both Worlds: Mitigating Trade-offs Between Accuracy and User Burden in Capturing Mobile App Privacy Preferences}{
+20th Privacy Enhancing Technologies Symposium (PETS 2020)}{Online}{Conference}{
+\begin{itemize}%
+\item Presented conference talk for peer reviewed publication and participated in panel discussions.
+\end{itemize}}
+
+\cventry{2019}{Digital Data Flows Masterclass: Mobile Apps}{Future of Privacy Forum}{Online}{Conference}{
+\begin{itemize}%
+\item Provided lectures and discussion session as a featured subject matter expert.
+\end{itemize}}
+
+\cventry{2018}{Personalized Privacy Assistant Project}{US Federal Trade Commission PrivacyCon}{Washington D.C.}{Conference}{
+\begin{itemize}%
+\item Presented poster with oral presentation and participated in panel discussions.
+\end{itemize}}
+
+\cventry{2017}{Assisting Users in a World Full of Cameras: A Privacy-aware Infrastructure for Computer Vision Applications}{US Federal Trade Commission PrivacyCon}{Washington D.C.}{Conference}{
+\begin{itemize}%
+\item Presented poster with oral presentation and participated in panel discussions.
+\end{itemize}}
+
+\cventry{2017}{A Privacy Assistant for the Internet of Things}{13th Symposium On Usable Privacy and Security (SOUPS 2017)}{San Jose}{Conference}{
+\begin{itemize}%
+\item Presented poster with oral presentation and participated in panel discussions.
+\end{itemize}}
+
+\cventry{2016}{Toward a Semantics for Data Retention in Eddy}{National Institute of Standards and Technology (NIST)}{Gaithersburg}{}{
+\begin{itemize}%
+\item Delivered an invited research talk, hosted by NIST Applied Cybersecurity Division.
+\end{itemize}}
+
+\cventry{2015}{Privacy Engineering Tool Clinic}{Computing Community Consortium Catalyst, Privacy by Design Workshop}{Pittsburgh}{}{
+\begin{itemize}%
+\item Delivered an invited talk with tool demonstration and discussion panel session.
+\end{itemize}}
+
+\cventry{2015}{Detecting Repurposing and Over-Collection in Multi-party Privacy Requirements Specifications}{23rd IEEE International Requirements Engineering Conference}{Ottawa}{Conference}{
+\begin{itemize}%
+\item Presented conference talk for peer reviewed publication and participated in panel discussions.
+\end{itemize}}
+
+\cventry{2015}{Towards Rapid Re-Certification Using Formal Analysis}{United States Navy Postgraduate School 12th Annual Acquisition Research Symposium}{Monterey}{Conference}{
+\begin{itemize}%
+\item Presented conference talk for peer reviewed publication and participated in panel discussions.
+\end{itemize}}
+
+\cventry{2014}{Genetic Algorithm with Self-Adaptive Mutation Controlled by Chromosome Similarity}{IEEE World Congress on Computational Intelligence (WCCI 2014), Evolutionary Computation Conference (CEC 2014)}{Beijing}{Conference}{
+\begin{itemize}%
+\item Presented conference talk for peer reviewed publication and participated in panel discussions.
+\end{itemize}}
+
+\cventry{2013}{How Much Do We Reveal Through Metadata? An Assessment of Online Privacy}{IBM Consortium for Software Engineering Research (CSER 2013)}{Toronto}{Conference}{
+\begin{itemize}%
+\item Presented poster with oral presentation and participated in panel discussions.
+\end{itemize}}
+
+\cventry{2013}{Policy IDE... and Lessons Learned Since}{The 4th International Conference on Emerging Ubiquitous Systems and Pervasive Networks (EUSPN 2013)}{Niagara Falls}{Conference}{
+\begin{itemize}%
+\item Presented conference talk for peer reviewed publication and participated in panel discussions.
+\end{itemize}}
+
+\cventry{2013}{Facilitating the Internet of Things with Policy Programming}{UOIT Undergraduate Research Showcase}{Oshawa}{Conference}{
+\begin{itemize}%
+\item Presented poster with oral presentation and participated in panel discussions.
+\end{itemize}}
+
+
+\section{Professional Service}
+
+\cventry{2020-Present}{External Program Committee Member}{Conference on Human Factors in Computing Systems (ACM SIGCHI)}{}{Conference}{
+\begin{itemize}%
+\item Reviewed 10+ submissions in the main proceedings and Late Breaking Works.
+\item Shepherded 4 papers in the main proceedings and 1 paper in the Late Breaking Works tracks.
+\end{itemize}}
+
+\cventry{2021-Present}{Reviewer}{IEEE Access}{Online}{Journal}{
+\begin{itemize}%
+\item Reviewed 6 submissions and participated in discussions.
+\end{itemize}}
+
+\cventry{2021-2022}{Reviewer}{ACM Transactions on Privacy and Security (TOPS, formerly known as TISSEC)}{Online}{Journal}{
+\begin{itemize}%
+\item Reviewed 6 submissions and participated in discussions.
+\end{itemize}}
+
+\cventry{2021}{Program Chair}{ACM SIGBOVIK}{Online}{Conference}{
+\begin{itemize}%
+\item Organized conference and webcast, acting as moderation chair for Q\&A.
+\end{itemize}}
+
+\cventry{2020-2021}{Council Member}{Cylab Justice Equity Diversity and Inclusion (JEDI) Council}{Carnegie Mellon University}{}{
+\begin{itemize}%
+\item Helped establish a new committee to promote justice, equity, diversity, and inclusion in faculty candidates, talks, hiring and student affairs.
+\end{itemize}}
+
+\cventry{2019-2020}{Committee Member}{Institute for Software Research Re-Branding Committee}{Carnegie Mellon University}{}{
+\begin{itemize}%
+\item Participated in coordinating and analyzing the results of a market research campaign for re-branding the department, establishing a new messaging/communications strategy, and developing a novel recruiting strategy for diverse faculty and doctoral students. The department was re-branded successfully in 2022, and is now called the Software and Societal Systems Department.
+\end{itemize}}
+
+\cventry{2018-2021}{Co-Founder}{Software and Societal Systems Department Forge Makerspace}{Carnegie Mellon University}{}{
+\begin{itemize}%
+\item Performed layout, development, maintenance, and instruction for the makerspace, leading safety training and other projects related to developing CNC machining, 3D printing, and CAD capabilities for the department.
+\end{itemize}}
+
+\cventry{2018-2020}{Co-Founder}{Software and Societal Systems Department Lunch and Learn Seminar Series}{Carnegie Mellon University}{Seminar}{
+\begin{itemize}%
+\item Managed and taught weekly seminars concerning a variety of software engineering topics, aimed at improving software development best practices among researchers.
+\end{itemize}}
+
+\cventry{2018}{Program Committee Member}{European Conference on Information Systems (ECIS 2018)}{Portsmouth}{Conference}{
+\begin{itemize}%
+\item Reviewed 3 submissions, and participated in discussions and shepherding.
+\end{itemize}}
+
+\cventry{2016}{Program Committee Member}{International Workshop on Privacy Engineering (IWPE 2016)}{San Jose}{}{
+\begin{itemize}%
+\item Reviewed 4 submissions, and participated in discussions and shepherding.
+\end{itemize}}
+
+\cventry{2015}{Web Chair}{International Conference on Multicore Software Engineering, Performance, and Tools (MUSEPAT 2014)}{Hong Kong}{Conference}{
+\begin{itemize}%
+\item Organized conference website and coordinated program committee.
+\end{itemize}}
+
+\cventry{2015}{Review Committee Member}{Software and Societal Systems Department PhD Applicant Review Committee}{Carnegie Mellon University}{}{
+\begin{itemize}%
+\item Reviewed 6 applications for incoming doctoral students, and participated in the final acceptance decision panel.
+\end{itemize}}
+
+
+\section{Awards}
+\cventry{2024}{Outstanding Contributor Award}{CSA/Matter Data Privacy Working Group}{}{}{}
+
+\cventry{2017}{Distinguished Poster Award}{13th Symposium On Usable Privacy and Security (SOUPS 2017)}{San Jose}{}{}
+
+\cventry{2017}{Hima and Jive Fellowship in Computer Science for International Students}{Carnegie Mellon University}{Pittsburgh, Pennsylvania}{}{}
+
+\cventry{2015}{Ready-Set-Transfer Award}{23rd IEEE International Requirements Engineering Conference}{Ottawa}{\textit{"Eddy: A privacy requirements specification language"}}{
+\begin{itemize}%
+\item Awarded first place in competitive industrial panel talks.
+\end{itemize}}
+
+\cventry{2014}{Faculty of Engineering and Applied Science Undergraduate Capstone Design Challenge Winner}{Ontario Tech University}{Oshawa}{\textit{"Incident Recognition and Intelligence System (IRIS)"}}{
+\begin{itemize}%
+\item Awarded first place in capstone research project competition, evaluated by a panel of academic and industrial experts.
+\end{itemize}}
+
+\cventry{2012--2014}{President's Honours List}{Ontario Tech University}{Oshawa}{}{
+\begin{itemize}%
+\item Awarded for exceptional academic achievement, with greater than 3.7 GPA.
+\end{itemize}}
+
+\cventry{2013}{National Science and Engineering Research Council (NSERC/CRSNG) Undergraduate Research Award}{Ontario Tech University}{Oshawa}{}{
+\begin{itemize}%
+\item Awarded federally funded research grant with competitive review process, funding 1 year of undergraduate research in engineering.
+\end{itemize}}
+
+\cventry{2011}{Dean's Honours List}{Ontario Tech University}{Oshawa}{}{
+\begin{itemize}%
+\item Awarded for exceptional academic achievement, with greater than 3.5 GPA.
+\end{itemize}}
+
+\cventry{2008}{Engineers Without Borders Design Challenge Winner}{McMaster University}{Hamilton}{}{
+\begin{itemize}%
+\item Awarded first place in a software requirements specification competition for distribution of AIDS medication in rural Africa.
+\end{itemize}}
+
+\cventry{2007}{DaVinci Engineering Design Challenge Winner}{University of Toronto}{Toronto}{}{
+\begin{itemize}%
+\item Awarded first place in an engineering design challenge for remote controlled electric motorized aquatic vehicles, in Electrical Engineering and Fluid Dynamics competition stream.
+\end{itemize}}
+
+\section{Languages and Technologies}
+\cventry{English}{Native Proficiency}{}{}{}{}
+\cventry{French}{Verbal, Written Proficiency}{}{}{}{}
+\cventry{German}{Verbal, Written Proficiency}{}{}{}{}
+\cventry{Python}{Preferred Language}{My default programming language, used for everything from web applications with django and django-rest, to data analysis and machine learning with scikit-learn, to performance analysis and scalability optimization with Cython in combination with several different multiprocessing and multithreading libraries}{}{}{}
+\cventry{Docker}{Preferred Technology}{My approach is to containerize as much as possible, employing a DevOps approach to research projects, prototypes, and larger-scale projects alike. Docker makes managing dependencies quicker and easier, and streamlines deployment across different platforms and architectures}{}{}{}
+\cventry{R}{Preferred Language}{Used in several research projects for statistical analysis, regression modelling, data mining, exploration and visualization}{}{}{}
+\cventry{JavaScript}{Secondary Preference}{Used in the development of full-stack web applications using MongoDB, Express Angular, and Node, geo-spatial mapping libraries, and cross-platform hybrid mobile applications using a variety of technologies such as Ionic}{}{}{}
+\cventry{C++}{Secondary Preference}{Used in high performance computing work for optimized image processing kernels and computer vision applications, a useful alternative when performance is a primary architectural driver}{}{}{}
+\cventry{Java}{Secondary Preference}{Used to develop parsers, lexers, and compilers for domain specific languages such as Eddy, as well as interact with a variety of Java-based research tools such as OWL-DL and other logic engines}{}{}{}
+
+\section{Professional Memberships}
+\cventry{Since 2024}{Connectivity Standards Alliance (CSA)}{Contributing Member}{}{}{
+\begin{itemize}%
+    \item Data Privacy Working Group
+    \item Matter Working Group
+    \item Certification Subgroup
+    \item Technical Subgroup
+    \item Marketing and Product Subgroup
+\end{itemize}}
+
+\cventry{Since 2023}{Institute of Operational Privacy Design (IOPD)}{Founding Ambassador, Standards Committee Member}{}{}{}
+\cventry{Since 2023}{Association for Computing Machinery (ACM)}{Professional Member}{}{}{}
+\cventry{Since 2021}{International Association of Privacy Professionals (IAPP)}{Member}{}{}{}
+
+\cventry{Since 2020}{HACK Pittsburgh}{Member and Educator}{}{}{}
+
+\cventry{Since 2018}{Software and Societal Systems Department Forge Makerspace}{Founding Member}{Carnegie Mellon University}{}{}
+
+\cventry{Since 2014}{Collaborative Institutional Training Initiative}{Responsible Conduct of Research (Physical Science, Social \& Behavioral Research)}{Carnegie Mellon University}{}{}
+
+\cventry{Since 2014}{The Corporation of the Seven Wardens}{Order of the Calling of the Engineer}{Camp 1, Toronto, Ontario, Canada}{}{}
+
+\cventry{Since 2013}{Institute of Electrical and Electronics Engineers (IEEE)}{Professional Member}{92797682}{}{
+\begin{itemize}%
+\item IEEE Computer Society Technical Community on Pattern Analysis and Machine Intelligence
+\item IEEE Computer Society Technical Community on Security and Privacy
+\item IEEE Internet of Things Community
+\item IEEE Digital Privacy Community
+\item IEEE TechEthics Community
+\end{itemize}}
+
+\cventry{Since 2011}{International Red Cross}{Class C Emergency First Aid, CPR and Defibrillator Certification}{}{}{}
+
+%\cventry{Since 2009}{Burlington Rifle and Revolver Club}{Officer and Safety Instructor}{}{}{}
+
+\clearpage
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
